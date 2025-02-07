@@ -1,0 +1,18 @@
+[gd_scene load_steps=5 format=3 uid="uid://bupn7lcmfjj8o"]
+
+[ext_resource type="Script" path="res://Scenes/Scripts/scenes_manager.gd" id="1_witlv"]
+[ext_resource type="PackedScene" uid="uid://cdgwogjksnaxg" path="res://Scenes/game_over_screen.tscn" id="2_4n7gx"]
+[ext_resource type="PackedScene" uid="uid://tkc60lkkveiu" path="res://Scenes/title_screen.tscn" id="3_d5cx4"]
+[ext_resource type="PackedScene" uid="uid://8p0fxwcxsy8q" path="res://Scenes/pause_screen.tscn" id="4_dfb4e"]
+
+[node name="ScenesManager" type="CanvasLayer"]
+script = ExtResource("1_witlv")
+
+[node name="TitleScreen" parent="." instance=ExtResource("3_d5cx4")]
+visible = false
+
+[node name="PauseScreen" parent="." instance=ExtResource("4_dfb4e")]
+visible = false
+
+[node name="GameOverScreen" parent="." instance=ExtResource("2_4n7gx")]
+visible = false

@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://br16xm1v5oyoh"]
+
+[ext_resource type="Texture2D" uid="uid://xse3nulfbd3y" path="res://icon.svg" id="1_5ek2u"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_og3ca"]
+size = Vector2(200, 5)
+
+[node name="Floor" type="StaticBody2D"]
+light_mask = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(100, 2.5)
+shape = SubResource("RectangleShape2D_og3ca")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 200.0
+offset_bottom = 5.0
+texture = ExtResource("1_5ek2u")
+expand_mode = 1

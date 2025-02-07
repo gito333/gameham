@@ -1,0 +1,67 @@
+[gd_scene load_steps=4 format=3 uid="uid://60furjubwyq4"]
+
+[ext_resource type="PackedScene" uid="uid://br16xm1v5oyoh" path="res://Game/2D/floor.tscn" id="1_4u547"]
+[ext_resource type="Script" path="res://Game/2D/main_stage.gd" id="1_8trpv"]
+[ext_resource type="PackedScene" uid="uid://dtj6p31hxhrae" path="res://Game/2D/player_2d.tscn" id="2_ps5ok"]
+
+[node name="Main_Stage" type="Node2D"]
+script = ExtResource("1_8trpv")
+
+[node name="Player2D" parent="." instance=ExtResource("2_ps5ok")]
+position = Vector2(42, -34)
+
+[node name="Map" type="Node2D" parent="."]
+
+[node name="Floor3" parent="Map" instance=ExtResource("1_4u547")]
+position = Vector2(-615, 1)
+
+[node name="Floor5" parent="Map" instance=ExtResource("1_4u547")]
+position = Vector2(-406, 1)
+
+[node name="Floor6" parent="Map" instance=ExtResource("1_4u547")]
+position = Vector2(-818, 0)
+
+[node name="Floor" parent="Map" instance=ExtResource("1_4u547")]
+position = Vector2(2, 3)
+
+[node name="Floor2" parent="Map" instance=ExtResource("1_4u547")]
+position = Vector2(211, 3)
+
+[node name="Floor4" parent="Map" instance=ExtResource("1_4u547")]
+position = Vector2(-201, 2)
+
+[node name="Floor7" parent="Map" instance=ExtResource("1_4u547")]
+position = Vector2(621, 2)
+
+[node name="Floor8" parent="Map" instance=ExtResource("1_4u547")]
+position = Vector2(830, 2)
+
+[node name="Floor9" parent="Map" instance=ExtResource("1_4u547")]
+position = Vector2(418, 1)
+
+[node name="Floor10" parent="Map" instance=ExtResource("1_4u547")]
+position = Vector2(1238, 4)
+
+[node name="Floor11" parent="Map" instance=ExtResource("1_4u547")]
+position = Vector2(1447, 4)
+
+[node name="Floor12" parent="Map" instance=ExtResource("1_4u547")]
+position = Vector2(1035, 3)
+
+[node name="Floor13" parent="Map" instance=ExtResource("1_4u547")]
+position = Vector2(391, -77)
+
+[node name="Floor14" parent="Map" instance=ExtResource("1_4u547")]
+position = Vector2(600, -77)
+
+[node name="Floor15" parent="Map" instance=ExtResource("1_4u547")]
+position = Vector2(186, -77)
+
+[node name="Floor16" parent="Map" instance=ExtResource("1_4u547")]
+position = Vector2(1008, -75)
+
+[node name="Floor17" parent="Map" instance=ExtResource("1_4u547")]
+position = Vector2(1217, -75)
+
+[node name="Floor18" parent="Map" instance=ExtResource("1_4u547")]
+position = Vector2(805, -76)

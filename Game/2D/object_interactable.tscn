@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://r5uf2efmhvh0"]
+
+[ext_resource type="Texture2D" uid="uid://xse3nulfbd3y" path="res://icon.svg" id="1_hfjlu"]
+[ext_resource type="Script" path="res://Game/2D/Scripts/object_interactable.gd" id="1_xa84g"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_6lmdk"]
+radius = 58.0
+height = 124.0
+
+[node name="ObjectInteractable" type="Area2D"]
+light_mask = 2
+script = ExtResource("1_xa84g")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(64, -63)
+shape = SubResource("CapsuleShape2D_6lmdk")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_top = -128.0
+offset_right = 128.0
+texture = ExtResource("1_hfjlu")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
