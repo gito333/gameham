@@ -8,3 +8,5 @@ var phrase: String = interaction_phrase
 func interact():
 	if not has_interacted:
 		has_interacted = true
+	else:
+		phrase = ""

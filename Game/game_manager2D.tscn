@@ -1,28 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://dpgkwbc5hqohq"]
+[gd_scene load_steps=2 format=3 uid="uid://dpgkwbc5hqohq"]
 
-[ext_resource type="PackedScene" uid="uid://dtj6p31hxhrae" path="res://Game/2D/Characters/player_2d.tscn" id="1_jyu3u"]
-[ext_resource type="Texture2D" uid="uid://xse3nulfbd3y" path="res://icon.svg" id="2_ofvx0"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_31vsn"]
-size = Vector2(134, 20)
+[ext_resource type="PackedScene" uid="uid://60furjubwyq4" path="res://Game/Stages/main_stage.tscn" id="1_fs3ol"]
 
 [node name="GameManager2D" type="Node2D"]
 
-[node name="Player2D" parent="." instance=ExtResource("1_jyu3u")]
-position = Vector2(-11, -9)
-
-[node name="Icon" type="StaticBody2D" parent="."]
-position = Vector2(72, 67)
-scale = Vector2(4.57813, 1)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Icon"]
-position = Vector2(2, -53)
-shape = SubResource("RectangleShape2D_31vsn")
-
-[node name="TextureRect" type="TextureRect" parent="Icon"]
-offset_left = -66.0
-offset_top = -59.0
-offset_right = 68.0
-offset_bottom = 69.0
-texture = ExtResource("2_ofvx0")
-metadata/_edit_use_anchors_ = true
+[node name="Main_Stage" parent="." instance=ExtResource("1_fs3ol")]

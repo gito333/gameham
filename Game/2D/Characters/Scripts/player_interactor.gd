@@ -8,9 +8,12 @@ func _ready() -> void:
 
 func _process(_delta):
 	if Input.is_action_just_pressed("interact") and interactable_object:
-		interactions.interact(interactable_object.phrase)
-		print("E with: ", interactable_object.name)
-		interactable_object.interact()
+		if not interactable_object.has_interacted:
+			interactions.interact(interactable_object.phrase)
+			print("E with: ", interactable_object.name)
+			interactable_object.interact()
+		else:
+			return
 
 func _on_area_entered(area: Area2D) -> void:
 	print("Entró en el área:", area.name)
