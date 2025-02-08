@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=3 uid="uid://hafa78px4ths"]
+
+[ext_resource type="Script" path="res://Game/2D/Scripts/npc.gd" id="1_kl5co"]
+[ext_resource type="Texture2D" uid="uid://xse3nulfbd3y" path="res://icon.svg" id="1_s0rpx"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_wnyko"]
+radius = 27.0
+height = 116.0
+
+[node name="NPC" type="Area2D"]
+light_mask = 8
+script = ExtResource("1_kl5co")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(27, -157.75)
+scale = Vector2(0.421875, 2.46484)
+texture = ExtResource("1_s0rpx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(27, -58)
+shape = SubResource("CapsuleShape2D_wnyko")
+
+[connection signal="area_entered" from="." to="." method="_on_detection_area_body_entered"]
+[connection signal="area_exited" from="." to="." method="_on_detection_area_body_exited"]
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]

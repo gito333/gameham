@@ -3,21 +3,20 @@
 [ext_resource type="Texture2D" uid="uid://xse3nulfbd3y" path="res://icon.svg" id="1_hfjlu"]
 [ext_resource type="Script" path="res://Game/2D/Scripts/object_interactable.gd" id="1_xa84g"]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_6lmdk"]
-radius = 58.0
-height = 124.0
+[sub_resource type="CircleShape2D" id="CircleShape2D_o8qp6"]
+radius = 64.0703
 
-[node name="ObjectInteractable" type="Area2D"]
+[node name="Area2D" type="Area2D" groups=["interactable_object"]]
 light_mask = 2
+z_as_relative = false
 script = ExtResource("1_xa84g")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(64, -63)
-shape = SubResource("CapsuleShape2D_6lmdk")
-
-[node name="TextureRect" type="TextureRect" parent="."]
-offset_top = -128.0
-offset_right = 128.0
+[node name="Sprite2D" type="Sprite2D" parent="." groups=["interactable_object"]]
+light_mask = 2
+position = Vector2(64, -64)
 texture = ExtResource("1_hfjlu")
 
-[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." groups=["interactable_object"]]
+light_mask = 2
+position = Vector2(64, -64)
+shape = SubResource("CircleShape2D_o8qp6")
