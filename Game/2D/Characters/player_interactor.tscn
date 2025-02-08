@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://b43tehi2rs0r4"]
 
-[ext_resource type="Script" path="res://Game/2D/Scripts/player_interactor.gd" id="1_0hnpo"]
+[ext_resource type="Script" path="res://Game/2D/Characters/Scripts/player_interactor.gd" id="1_0hnpo"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_qygwj"]
 radius = 56.0

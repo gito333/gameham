@@ -1,16 +1,16 @@
 [gd_scene load_steps=6 format=3 uid="uid://60furjubwyq4"]
 
 [ext_resource type="Script" path="res://Game/2D/Scripts/main_stage.gd" id="1_lmuw7"]
-[ext_resource type="PackedScene" uid="uid://dtj6p31hxhrae" path="res://Game/2D/player_2d.tscn" id="2_1njam"]
-[ext_resource type="PackedScene" uid="uid://br16xm1v5oyoh" path="res://Game/2D/floor.tscn" id="3_t76km"]
-[ext_resource type="PackedScene" uid="uid://r5uf2efmhvh0" path="res://Game/2D/object_interactable.tscn" id="4_cet38"]
-[ext_resource type="PackedScene" uid="uid://hafa78px4ths" path="res://Game/2D/npc.tscn" id="5_yob7a"]
+[ext_resource type="PackedScene" uid="uid://dtj6p31hxhrae" path="res://Game/2D/Characters/player_2d.tscn" id="2_1njam"]
+[ext_resource type="PackedScene" uid="uid://br16xm1v5oyoh" path="res://Game/2D/Map/floor.tscn" id="3_t76km"]
+[ext_resource type="PackedScene" uid="uid://r5uf2efmhvh0" path="res://Game/2D/Map/object_interactable.tscn" id="4_cet38"]
+[ext_resource type="PackedScene" uid="uid://hafa78px4ths" path="res://Game/2D/Characters/npc.tscn" id="5_yob7a"]
 
 [node name="Main_Stage" type="Node2D"]
 script = ExtResource("1_lmuw7")
 
 [node name="Player" parent="." instance=ExtResource("2_1njam")]
-z_index = 10
+z_index = 1
 position = Vector2(42, -34)
 
 [node name="Map" type="Node2D" parent="."]
@@ -74,4 +74,5 @@ position = Vector2(805, -76)
 position = Vector2(253, -91)
 
 [node name="NPC" parent="." instance=ExtResource("5_yob7a")]
+z_index = 2
 position = Vector2(-156, -37)

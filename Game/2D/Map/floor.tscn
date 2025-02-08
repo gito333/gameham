@@ -11,6 +11,7 @@ light_mask = 4
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(100, 2.5)
 shape = SubResource("RectangleShape2D_og3ca")
+one_way_collision = true
 
 [node name="TextureRect" type="TextureRect" parent="."]
 offset_right = 200.0

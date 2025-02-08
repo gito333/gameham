@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=3 uid="uid://ca458tw3qasba"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_5ju0x"]
+radius = 15.0
+height = 15.0
+radial_segments = 15
+rings = 16
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_setoe"]
+albedo_color = Color(0, 0.784314, 0, 1)
+
+[sub_resource type="SphereMesh" id="SphereMesh_pe61w"]
+material = SubResource("StandardMaterial3D_setoe")
+is_hemisphere = true
+
+[node name="NPCBody" type="Node2D"]
+light_mask = 8
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="."]
+position = Vector2(8.5, -20)
+scale = Vector2(0.495027, 1.03588)
+mesh = SubResource("SphereMesh_5ju0x")
+
+[node name="MeshInstance2D2" type="MeshInstance2D" parent="."]
+position = Vector2(8.5, 0)
+scale = Vector2(-17.1243, -14.1552)
+mesh = SubResource("SphereMesh_pe61w")

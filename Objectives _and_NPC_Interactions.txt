@@ -1,0 +1,51 @@
+--------------------------------------
+Objectives
+--------------------------------------
+1. Items de NPCs
+	· Encontrar a X NPC y "obtener" su disfraz o algo que lleve.
+		1.
+		2.
+		3.
+		4.
+		5.
+2. Sabotaje
+	· Ir a ciertos lugares e interactuar con el environment.
+		1.
+		2.
+		3.
+		4.
+		5.
+3. Oculto?
+	· Collectables: Estilo "Monedas" que las obtienes automáticamente y necesitas obtener X cdad.
+	· Puede ser 1 objetivo fijo. Si has conseguido los otros ¿3? objetivos random, pero no has recogido todo... MEC! FAILURE!!!
+--------------------------------------
+NPCs
+--------------------------------------
+1. Ex-Pareja N
+	· Joke no encuentro a mi Ex entre todo este tumulto? 
+	a. Menos mal!
+	b. Quería pedirle volver!
+2. Anciane N
+	· No tiene sentido que esté aquí. Movimiento lento... molesta!
+	a. El carnaval estaba mejor en mi época!
+	b. Esto es algo para jóvenes!
+3. NPC N	x5 (# Items de NPCs)
+	· 
+	a. Comentar cosas de los trajes
+4. Maleante N	x5 (# Sabotajes)
+	· Te detecta claramente como un "aliade".
+	a. Te comenta donde ha podido ver policías ¿encubiertos?
+	b. Da una pista de un sabotaje
+5. Persona ebria N
+	· Interacción "al reves". Si puede, interactuará contigo y te meterá una "chapa". Habrá algo de interés en lo que ha dicho?
+	a. Puede decirte NADA
+	b. Puede darte pistas de cosas ocultas en los niveles
+6. Guiri N
+	· No entiende tu idioma
+	a. Quiere pedirte info. Quizas te dice algo de un lugar de interés ¿Siveles!??
+	b. Lo intenta.. pero ni papa de que puede estar contando.
+
+--------------------------------------
+TEMA POLICIA + ESTRELLAS
+--------------------------------------
+Letargo. Ir cerrando esto antes.

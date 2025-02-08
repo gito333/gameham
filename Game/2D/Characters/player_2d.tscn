@@ -1,8 +1,8 @@
 [gd_scene load_steps=5 format=3 uid="uid://dtj6p31hxhrae"]
 
-[ext_resource type="Script" path="res://Game/2D/Scripts/player_2d.gd" id="1_g6wod"]
+[ext_resource type="Script" path="res://Game/2D/Characters/Scripts/player_2d.gd" id="1_g6wod"]
 [ext_resource type="Texture2D" uid="uid://xse3nulfbd3y" path="res://icon.svg" id="1_ows2f"]
-[ext_resource type="PackedScene" uid="uid://b43tehi2rs0r4" path="res://Game/2D/player_interactor.tscn" id="3_cychq"]
+[ext_resource type="PackedScene" uid="uid://b43tehi2rs0r4" path="res://Game/2D/Characters/player_interactor.tscn" id="3_cychq"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_rxobj"]
 radius = 64.0
