@@ -12,8 +12,9 @@ script = ExtResource("1_lmuw7")
 [node name="Player" parent="." instance=ExtResource("2_1njam")]
 z_index = 1
 position = Vector2(42, -34)
-run_speed = 90.0
-jump_force = -300.0
+speed = 60.0
+jump_force = null
+smoothing = null
 
 [node name="Map" type="Node2D" parent="."]
 position = Vector2(348, -9)
@@ -73,7 +74,7 @@ position = Vector2(1217, -75)
 position = Vector2(805, -76)
 
 [node name="InteractableObject" parent="Map" instance=ExtResource("4_cet38")]
-position = Vector2(-241, -21)
+position = Vector2(253, -91)
 
 [node name="NPC" parent="." instance=ExtResource("5_yob7a")]
 z_index = 2

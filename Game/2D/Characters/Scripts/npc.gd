@@ -11,11 +11,8 @@ func _ready():
 	original_speed = speed
 
 func _process(delta):
-	if interacting:
-		return
 	position.x += speed * delta
-	if not has_interacted:
-		debug_interaction()
+	
 
 func interact():
 	if not has_interacted:
@@ -35,6 +32,3 @@ func _on_body_exited(body: Node2D) -> void:
 		print("NPC: Jugador fuera, vuelvo a mi velocidad normal.")
 		speed = original_speed
 		interacting = false
-
-func debug_interaction() -> void:
-	print("Ya hemos interactuado!")

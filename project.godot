@@ -63,3 +63,7 @@ interact={
 2d_render/layer_2="map"
 2d_render/layer_3="objects"
 2d_render/layer_4="npc"
+
+[rendering]
+
+textures/canvas_textures/default_texture_filter=0
